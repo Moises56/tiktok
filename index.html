@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tik Tok</title>
+
+      <!--* GetBootstrap -->
+     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"> -->
+     <link rel="stylesheet" href="/css/bootstrap.min.css"/>
+     
+     <!--* Para Iconos-FontAwesome-->
+     <script src="https://kit.fontawesome.com/0174cae6ac.js" crossorigin="anonymous"></script>
+     <!-- <link rel="stylesheet" href="/css/all.css"> -->
+
+       <!--* style css  -->
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" data-bs-toggle="modal" data-bs-target="#newCuentaModal">
+            <img src="/img/tiktoklogo2.svg" alt=""><img src="/img/tiktoklogo.svg" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link home-link" aria-current="page" href="#"></a>
+              </li>
+            
+            </ul>
+            <!-- <div class="m-auto"> -->
+                <form class="d-flex ">
+                    <a class=" btn-upload me-3" data-bs-toggle="modal" data-bs-target="#newVideoModal"><i class="fas fa-cloud-upload-alt"></i></a>
+                    <button class="btn btn-login" type="button" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                </form>
+            <!-- </div> -->
+          </div>
+        </div>
+      </nav>
+
+      <main role="main" class="container">
+        
+        <!-- <div class="starter-template" id="user-actual">
+          <h4 class="saludo-inicial">Que necesitas?</h4>
+        </div> -->
+
+        <div class="row">
+          <!-- * izquierda -->
+            <div class="col-3 pt-3 colum1">              
+                <div class="pt-2">
+                    <h5 class="foryou" ><i class="fas fa-home me-2"> </i>For you</h5>
+                    <h5 class="fallowing" ><i class="fas fa-user-friends me-2"></i>Following</h4>
+                </div>
+                <div class="pt-5">
+                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, repellendus?</p>
+                    <button class="btn btn-crearCuenta" data-bs-toggle="modal" data-bs-target="#newCuentaModal">Crear Cuenta</button>
+                </div>
+
+            </div>
+
+         <!-- * centro -->
+            <div class="col-6 pt-3">
+              <div class="container">
+                <div class="row" id="tiktok" >
+                  
+                  <!-- <div class="card">
+                    <img src="/img/profile-pics/goku.jpg" class="img-inicial" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title title1">@goku</h5>
+                      <h6 class="card-subtitle mb-2 text-muted title2">Son Goku</h6>
+                      <a class="btn btn-fallowing">Fallow</a>
+                      <h6 class="card-subtitle mb-2 text-muted title3">#Dog #freezer !Ya vasta Freezer!</h6>
+                      <p class="card-text text1"><i class="fas fa-music me-2"></i>Cha la head chala!</p>
+                      <video class="repro-video" src="/videos/6.mp4" controls="controls"> Vídeo no es soportado... </video>        -->
+                      <!-- <video class="repro-video" src="/videos/6.mp4" controls="controls" autoplay="autoplay"> Vídeo no es soportado... </video>        -->
+                    
+                        <!-- <div class="iconos-like">
+                          <a class="btn icono-heart"><i class="fas fa-heart"></i></a>
+                          <p class="cant-heart">3260</p>
+                          <a class="btn icono-heart"><i class="fas fa-comment-dots"></i></a>
+                          <p class="cant-chat">17</p>
+                          <a class="btn icono-heart"><i class="fas fa-share"></i></a>
+                          <p class="cant-share">29</p>
+                        </div>                    
+                    </div>
+                  </div><hr class="hr-clas"> -->
+                 
+              
+                  
+                    
+                  </div>
+                </div>
+                
+            </div>
+
+            <!-- * derecha -->
+            <div class="col-3 pt-5 colum3">
+                <!-- <h1>Hello Words</h1> -->
+
+                <div class="container">
+                  <div class="row" >
+                    <div class="iconos2">
+                      <a href=""><i class="fas fa-link"></i></a>
+                      <a href=""><i class="fab fa-whatsapp"></i></a>
+                      <a href=""><i class="fab fa-facebook"></i></a>
+                      <a href=""><i class="fab fa-twitter"></i></a>
+                      <hr>
+                    </div>
+                
+                      <div class="card-body">
+                        <h5 class="card-title titlePrin-col3">Suggested accounts</h5>
+                      </div>
+                  <div id="user-suggested">
+                    <!-- <div class="card card-perfiles">
+                      <img src="/img/profile-pics/goku.jpg" class="img-inicial-col3" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title title1-col3">asd</h5>
+                        <h6 class="card-subtitle mb-2 text-muted title2-col3">Son Goku</h6>
+                        <a class="btn btn-fallowing-col3">Fallow</a>
+                      </div>
+                    </div> -->
+                  </div>
+
+                  <div class="card-body">
+                    <h5 class="card-title titlePrin-col3 ">Discover</h5>
+                  </div>
+                  <div class="container">
+                    <div class="row" id="hastaggs">
+
+                      <!-- <div class="card discover-class" style="width: 18rem;">
+                        <div class="card-body">
+                          <h5 class="card-title titulo-col3">#Dogs</h5>
+                          <h6 class="card-subtitle mb-2 text-muted titulo2-col3">1.3M of videos <i class="fas fa-chevron-right"></i></h6>
+                          
+                        </div>
+                      </div> -->
+
+                      
+                    </div>
+                  </div>
+                    
+                    
+                  </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        </main>
+
+    
+    
+
+<!--* modal login -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div> -->
+      <h5 class="modal-title title-login">Login</h5>
+
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Usuario</label>
+                <input type="email" class="form-control input-label" id="user-name" placeholder="usuario" required>
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Password</label>
+                <input type="password" class="form-control input-label" id="pws-login" placeholder="Password" required>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        <button type="button" data-bs-dismiss="modal" class="btn btnM-login" onclick="btnLogin()">Login</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--* modal Crear Cuenta -->
+<div class="modal fade" id="newCuentaModal" tabindex="-1" aria-labelledby="newCuentaModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div> -->
+      <h5 class="modal-title title-login">Crear Cuenta</h5>
+
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Usuario</label>
+                <input type="email" class="form-control input-label" id="user-registro" placeholder="usuario" required>
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Password</label>
+                <input type="password" class="form-control input-label" id="pws-registro" placeholder="Password" required>
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Confirmar Password</label>
+                <input type="password" class="form-control input-label" placeholder="Confirmar Password" required>
+              </div>
+              <div class="mb-2">
+
+                <label for="message-text" >Imagen de Perfil</label>          
+                <div class="row" id="img-perfil"></div>
+                
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        <button type="button" data-bs-dismiss="modal" class="btn btnM-login" onclick="newCuenta()">Crear Cuenta</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--* modal New Tiktok -->
+<div class="modal fade" id="newVideoModal" tabindex="-1" aria-labelledby="newVideoModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- <div class="modal-header">
+        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div> -->
+      <h5 class="modal-title title-login">Nuevo Tiktok</h5>
+
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Video</label>
+                <select class="form-control input-label" name="" id="video-tiktok">
+                  <option hidden selected>Seleccionar Video</option>
+                  <!-- <option value="video1.mp4">video 1</option> -->
+                
+                </select>
+                <!-- <input type="email" class="form-control input-label" placeholder="Sele" required> -->
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">HashTags</label>
+                <input type="text" class="form-control input-label" id="HashTags-tiktok" placeholder="HashTags" required>
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Mensaje</label>
+                <input type="text" class="form-control input-label" id="mensaje-tiktok" placeholder="Mensaje" required>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        <button type="button" data-bs-dismiss="modal" class="btn btnM-login" onclick="newVideo()">Publicar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+        <script src="/js/controller.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
